@@ -1,0 +1,12 @@
+header{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: aqua;
+    font-size:2rem;
+    font-family: monospace;
+    width: 100%;
+    h1{
+        align-self: center;
+        text-decoration: double;
+    }
+}

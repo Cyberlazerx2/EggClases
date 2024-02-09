@@ -1,0 +1,47 @@
+body{
+    background-color: beige;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.parrafo{
+    color: rgb(197, 33, 33);
+}
+div{
+    background-color: white;
+    text-align: center;
+    font-size: 0.5rem;
+}
+img{
+    width: 300px;
+    border: 10px black ridge;
+    border-radius: 10px;
+}
+button{
+    width: 100px;
+    
+}
+button:hover{
+    transition: all 1.3s;
+    box-shadow: 0px 10px 10px black ;
+}
+a{
+    background-color: rgb(180, 31, 31);
+}
+a:active{
+    color: antiquewhite;
+    background-color:blue ;
+}
+.container{
+    border: solid black 5px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ol{
+    font-weight: bold;
+    list-style-type: armenian;
+}

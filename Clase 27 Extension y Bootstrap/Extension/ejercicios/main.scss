@@ -1,0 +1,35 @@
+//Extend
+
+.pepe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #{&}_titulo{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        background-color: aqua;
+        background: linear-gradient(blue,yellow);
+    }
+    #{&}_parrafo{
+        @extend .pepe;
+    }
+}
+    .btn{
+        background:linear-gradient(Red,white);
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover{
+            transition: all 1s;
+            text-decoration: line-through;
+            box-shadow: 3px 3px 3px 0px;
+        }
+        
+    }
+    .btn_numero1{
+    @extend .btn;
+    }
+    .btn_numero2{
+    @extend .btn;
+    }
+    

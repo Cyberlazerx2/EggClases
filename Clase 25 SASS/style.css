@@ -1,0 +1,40 @@
+@media (max-width: 796px) {
+  body {
+    font-size: 100px;
+  }
+}
+body {
+  font-weight: 1000;
+  width: 50rem;
+}
+body h1 {
+  background: linear-gradient(rgba(26, 238, 114, 0.288), aqua);
+  font-size: 2rem;
+  margin: 3rem;
+  border: black solid 0.2rem;
+}
+body .Parrafo {
+  font-size: 2rem;
+  border: black solid 0.2rem;
+  background-image: url("imagendeprueba.jpg");
+  color: yellow;
+  filter: brightness(100%);
+}
+body div h3 {
+  background: linear-gradient(rgba(26, 238, 114, 0.288), aqua);
+  font-size: 2rem;
+  margin: 3rem;
+  border: black solid 0.2rem;
+}
+body div p {
+  margin: 3rem;
+  border: black solid 0.2rem;
+}
+
+.Parrafo {
+  width: 80%;
+  border-radius: 0.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

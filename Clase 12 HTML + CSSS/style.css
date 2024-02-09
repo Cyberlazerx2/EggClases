@@ -1,0 +1,96 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body>div {
+
+    width: 400px;
+    height: 400px;
+    perspective: 3000px;
+}
+
+.frente {
+    color: white;
+    background-size: cover;
+    background-image: url(probando.jpg);
+    width: 100%;
+    /*Ocupa el 100% del ancho del contenedor*/
+    height: 100%;
+    /*Ocupa el 100% del alto del contenedor*/
+    position: absolute;
+    /*Para controlar la posicion de los elementos*/
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #3498db;
+    border-radius: 10px;
+    transition: 1.5s;
+    /*Se utiliza para aplicar una transicion */
+    /*controlamos la velocidad con la que rota la tarjeta de presentacion*/
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 5px grey;
+}
+h2, p, button{
+    margin: 100px;
+}
+
+.dorso {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #34db7f;
+    border-radius: 10px;
+    transition: transform 1.5s;
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacion>div {
+    padding: 15px;
+    text-align: center;
+}
+
+.informacion>div:nth-child(1) {
+    border-right: 1px solid black;
+}
+
+.informacion>div:nth-child(2) {
+    border-right: 1px solid black;
+}
+
+.dorso {
+    transform: rotateY(180deg);
+    /*Dorso permanece girado 180° sobre el eje Y*/
+}
+
+.card:hover .frente {
+    /*frente gira 180° sobre el eje Y*/
+    transform: rotateY(180deg);
+    box-shadow: 0px 0px 5px grey;
+}
+
+.card:hover .dorso {
+    /*Dorso gira a 0° sobre el eje Y*/
+    transform: rotateY(0deg);
+    box-shadow: 0px 0px 5px grey;
+}

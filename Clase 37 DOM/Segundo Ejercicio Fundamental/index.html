@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio: Cambio de Color de Fondo</title>
+</head>
+<body>
+    <div id="miDiv" style="width: 200px; height: 100px; background-color: pink;">
+        Este es un div con un color de fondo inicial.
+    </div>
+
+    <button id="cambiarColorBtn">Cambiar Color de Fondo</button>
+    <button id="restaurarColorBtn">Restaurar Color de Fondo</button>
+
+    <script>
+        // Función para cambiar el color de fondo del div
+        function cambiarColorDeFondo() {
+            var miDiv = document.getElementById('miDiv');
+            miDiv.setAttribute('style', 'background-color: yellow;');
+        }
+
+        // Función para restaurar el color de fondo del div al valor inicial
+        function restaurarColorDeFondo() {
+            var miDiv = document.getElementById('miDiv');
+            miDiv.removeAttribute('style');
+            miDiv.setAttribute('style', 'width: 200px; height: 100px; background-color: pink;')
+        }
+
+        // Agregar eventos a los botones
+        document.getElementById('cambiarColorBtn').addEventListener('click', cambiarColorDeFondo);
+        document.getElementById('restaurarColorBtn').addEventListener('click', restaurarColorDeFondo);
+    </script>
+</body>
+</html>

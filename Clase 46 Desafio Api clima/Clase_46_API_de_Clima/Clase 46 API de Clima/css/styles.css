@@ -1,0 +1,46 @@
+
+body{
+    background-image: url("../img/28.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    gap: 10px;
+}
+.container h1{
+    grid-column: 1 / span 2;
+}
+.respuestas{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+}
+.respuesta1{
+    background-color: rgba(0, 108, 201, 0.8);
+    border: 2px solid #222E24;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+h1{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.respuesta2{
+    background-color: rgba(0, 108, 201, 0.8);
+    border: 2px solid #222E24;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}

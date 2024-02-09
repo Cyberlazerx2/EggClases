@@ -1,0 +1,99 @@
+//Variables y Arrays
+
+$colorDeFondoParaTitulos: linear-gradient(rgba(26, 238, 114, 0.288),aqua);
+
+$colorParaLetras: yellow;
+
+$variableParaFuentes: 2rem;
+
+$margenes: 3rem;
+
+$bordes: black solid 0.2rem;
+
+$imagenDePrueba: url("imagendeprueba.jpg");
+
+$tamanioDeFuentes:(
+    "regular": 400px,
+    "mediano": 500px,
+    "largo": 1000px,
+);
+
+$verdadero: false;
+
+//Funciones
+
+@function tamanio($escala){
+    @return map-get($tamanioDeFuentes, $escala);
+}
+
+@function anchoDeElemento($width){
+    @if $width <= 6.25rem{
+        $resultado:round($width * 0.0625)/100;
+        @return $resultado;
+    }@else{
+        @return $width;
+    }
+    
+}
+@function oscurecer($nivel-de-oscuridad){
+    $resultado:$nivel-de-oscuridad - 10%;
+    @return $nivel-de-oscuridad;
+}
+@media(max-width:796px){
+    $valor: true;
+    @function fuentes($valor2){
+        $resultado: 0px;
+        @if $valor{
+            $resultado: 100px;
+        }
+        @return $resultado;
+    }
+    body{
+        font-size: fuentes($valor);
+        h1{}
+        p{}
+        div{
+            h3
+            p{}
+        }
+    }
+}
+//El Cuerpo del CSS
+
+body{
+    font-weight: $tamanioDeFuentes("mediano");
+    width: anchoDeElemento(50rem);
+    h1{
+        background:$colorDeFondoParaTitulos;
+        font-size: $variableParaFuentes;
+        margin: $margenes;
+        border:$bordes;
+    }
+    .Parrafo{
+        font-size: $variableParaFuentes;
+        border:$bordes;
+        background-image: $imagenDePrueba;
+        color: $colorParaLetras;
+        // @if $verdadero{
+        //     display: block;
+        // }@else{
+        //     visibility: hidden;
+        // }
+        filter:brightness(oscurecer(100%));
+    }
+    div{
+        h3{
+            background: $colorDeFondoParaTitulos;
+            font-size: $variableParaFuentes;
+            margin: $margenes;
+            border:$bordes;
+        }
+        p{
+            margin: $margenes;
+            border:$bordes;
+        }
+    }
+}
+
+@import 'parrafo2';
+

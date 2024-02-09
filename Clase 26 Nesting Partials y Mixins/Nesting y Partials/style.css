@@ -1,0 +1,101 @@
+ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li a:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
+ul li img {
+  width: 50px;
+}
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: aqua;
+  font-size: 2rem;
+  font-family: monospace;
+  width: 100%;
+}
+header h1 {
+  align-self: center;
+  text-decoration: double;
+}
+
+.botonesEnlace {
+  width: 10rem;
+  height: 3rem;
+  font-size: large;
+  border-radius: 10px;
+  background: linear-gradient(rgb(0, 255, 179), rgb(0, 255, 76));
+}
+
+.primario:hover {
+  transition: all 0.5s;
+  visibility: hidden;
+}
+
+div {
+  display: flex;
+  flex-flow: wrap row;
+  margin: 1rem;
+  justify-content: space-evenly;
+}
+div .secundario:hover {
+  width: 10rem;
+  height: 3rem;
+  transition: all 0.3s;
+  font-size: large;
+  text-decoration: underline;
+  background-color: aqua;
+  box-shadow: 0 0px 5px;
+}
+
+form {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-content: center;
+  width: 20rem;
+  height: 10rem;
+  margin: 10px;
+}
+form input {
+  border-radius: 10px;
+}
+form Select {
+  border-radius: 10px;
+  margin: 10px;
+}
+form Select optiion {
+  background-color: blue;
+}
+form Select .n1 {
+  background-image: url("img/descarga.jpeg");
+}
+form Select .n2 {
+  background-image: url("img/png-transparent-argentina-banner-decoration-flag-sign-signal-symbol-blue-banner.png");
+}
+form Select .n3 {
+  background-image: url("img/gratis-png-bandera-de-mexico-bandera-de-los-estados-unidos-mexico.png");
+}
+form Textarea {
+  border-radius: 10px;
+  margin: 10px;
+  width: 20rem;
+}
+
+/*# sourceMappingURL=style.css.map */

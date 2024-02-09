@@ -1,0 +1,42 @@
+$margenes:10px;
+$ancho:20rem;
+$alto: 10rem;
+form{
+    display: flex;
+    flex-flow:wrap column;
+    justify-content: center;
+    align-content: center;
+    width: $ancho;
+    height: $alto;
+    margin: $margenes;
+    input{
+
+        border-radius: $margenes;
+    }
+    Select{
+        border-radius: $margenes;
+        margin: $margenes;
+        optiion{
+            background-color: blue;
+        }
+        .n1{
+            background-image: url('img/descarga.jpeg');
+        }
+        .n2{
+            background-image: url('img/png-transparent-argentina-banner-decoration-flag-sign-signal-symbol-blue-banner.png');
+
+        }
+        .n3{
+            background-image: url('img/gratis-png-bandera-de-mexico-bandera-de-los-estados-unidos-mexico.png');
+
+        }
+        .n4{
+            
+        }
+    }
+    Textarea{
+        border-radius: $margenes;
+        margin: $margenes;
+        width: $ancho;
+    }
+}
